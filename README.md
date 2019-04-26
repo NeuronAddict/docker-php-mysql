@@ -41,3 +41,12 @@ Modify the Dockerfile in php. See https://hub.docker.com/_/php/ for more help.
 - click on the 'run a listener to debug php' at right at the run button.
 - add a breakpoint on your index.php file
 
+### save the sql dataabse for later usage
+
+You can save the current state of the database for later start :
+
+```
+sh -c 'docker exec -it dockerphpmysql_mysql_1 mysqldump -u mysql -pmysql db' > docker-entrypoint-initdb.d/wp.sql
+```
+
+(All files on docker-entrypoint-initdb.d are executeds by the database at startup)
