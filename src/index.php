@@ -1,1 +1,5 @@
-<?php echo "coucou\n"; ?>
+<?php
+
+echo "coucou\n";
+
+?>

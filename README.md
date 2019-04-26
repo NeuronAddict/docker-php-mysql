@@ -35,3 +35,9 @@ Put your php files into src, src become your apache root.
 #### add php module
 Modify the Dockerfile in php. See https://hub.docker.com/_/php/ for more help.
 
+### debug in php storm or intellij idea
+
+- run a docker-compose configuration with the docker-compose.yml on the root
+- click on the 'run a listener to debug php' at right at the run button.
+- add a breakpoint on your index.php file
+
