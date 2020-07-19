@@ -17,3 +17,5 @@ COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 
 RUN echo "xdebug.remote_host="`/sbin/ip route|awk '/default/ { print $3 }'` >> /usr/local/etc/php/conf.d/xdebug.ini
 
+RUN usermod -u 1000 www-data && chown -R 1000.www-data /var/www/html
+

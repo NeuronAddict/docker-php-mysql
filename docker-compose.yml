@@ -16,7 +16,7 @@ services:
     build: 
       context: php
     volumes:
-    - ./src:/var/www/html
+    - ./src:/var/www/html:rw
     ports:
     - 127.0.0.1:8181:80
 
