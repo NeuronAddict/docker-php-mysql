@@ -1,4 +1,11 @@
-# quick php - mysql app
+# Quick php - mysql docker ready
+
+Docker ready to use with : 
+
+- php
+- mysql
+- xdebug
+
 
 ## Quickstart
 
@@ -17,6 +24,8 @@ Now, in other console :
 $ curl http://127.0.0.1:8181
 coucou
 ```
+
+Open the project with phpstorm and enable debugging.
 
 ### Configuration
 
